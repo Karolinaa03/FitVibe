@@ -346,7 +346,7 @@
 
 <!-------FAQ End-------> 
 
-<!-------Contact Start------->
+<!-------Contact Start------->  
 <section class="contact section-padding" data-scroll-index='6'>
   <div class="container">
     <div class="row">
@@ -355,7 +355,7 @@
           <h3>Skontaktuj się z nami!</h3>
           <span class="line"></span>
           <p>Wypełnij formularz poniżej, a my skontaktujemy się z Tobą tak szybko,
-            jak to możliwe!. Jesteśmy tutaj, aby odpowiedzieć na wszystkie Twoje pytania i pomóc Ci w
+            jak to możliwe! Jesteśmy tutaj, aby odpowiedzieć na wszystkie Twoje pytania i pomóc Ci w
             osiągnięciu zdrowego stylu życia!</p>
         </div>
         <div class="section-content">
@@ -370,7 +370,16 @@
                     <input type="email" id="email" class="form-input w-100" name="email" placeholder="Email" required>
                   </div>
                 </div>
-                <input type="text" id="subject" class="form-input w-100" name="subject" placeholder="Subject">
+                <!-- Zmieniony kod tematu -->
+                <div class="form-group">
+                  <select id="subject" class="form-input w-100" name="subject" required>
+                    <option value="">Wybierz temat</option>
+                    <option value="Zapytanie ogólne">Zapytanie ogólne</option>
+                    <option value="Współpraca">Współpraca</option>
+                    <option value="Wsparcie techniczne">Wsparcie techniczne</option>
+                  </select>
+                </div>
+                <!-- Koniec zmiany tematu -->
                 <textarea class="form-input w-100" id="message" placeholder="Message" name="message"></textarea>
                 <button class="btn-grad w-100 text-uppercase" type="submit" name="button">submit</button>
               </form>
@@ -409,9 +418,7 @@
     </div>
   </div>
 </section>
-
-
-<!-------Contact End-------> 
+<!-------Contact End------->
 
 <!-------Download End------->
 <section class="download section-padding">
